@@ -7,7 +7,7 @@ import re
 
 
 def print_stats(size: int, status_code: dict) -> None:
-    """print stats"""
+    """Print stats."""
     print("File size: {}".format(size))
     for key, value in sorted(status_code.items()):
         if value != 0:
@@ -36,4 +36,3 @@ try:
 
 finally:
     print_stats(size, status_code)
-         
